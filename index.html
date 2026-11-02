@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#590d22">
+  <title>For Nasya ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <p class="eyebrow">14 NOVEMBER 2026 · YOUR SPECIAL DAY</p>
+    <h1>For <span>Nasya</span> ♡</h1>
+    <p>A little scrapbook made especially for you.</p>
+    <a class="button" href="#gallery">Open our scrapbook ↓</a>
+    <button class="button outline" id="surpriseBtn">A tiny surprise ✨</button>
+  </header>
+
+  <main>
+    <section class="section" id="gallery">
+      <p class="eyebrow">MEMORIES / 01</p>
+      <h2>Our Little Gallery</h2>
+      <p class="description">Little moments, kept forever ♡</p>
+
+      <div class="gallery">
+        <button class="polaroid" data-caption="A moment worth keeping ♡">
+          <img src="images/foto1.jpg" alt="Kenangan 1">
+          <span>little moment</span>
+        </button>
+        <button class="polaroid" data-caption="Some days become favorite memories.">
+          <img src="images/foto2.jpg" alt="Kenangan 2">
+          <span>favorite day</span>
+        </button>
+        <button class="polaroid" data-caption="A tiny snapshot, a big memory.">
+          <img src="images/foto3.jpg" alt="Kenangan 3">
+          <span>sunny memory</span>
+        </button>
+        <button class="polaroid" data-caption="Here's to more memories ahead ♡">
+          <img src="images/foto4.jpg" alt="Kenangan 4">
+          <span>more to come</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section" id="music">
+      <p class="eyebrow">SOUNDTRACK / 02</p>
+      <h2>A Song for You 🎵</h2>
+      <p class="description">A song that makes me think of you.</p>
+
+      <div class="music-card">
+        <div class="record" id="record">;))</div>
+        <h3 id="songTitle">A song for Nasya</h3>
+        <audio id="audio" src="music/lagu.mp3" preload="metadata"></audio>
+        <div class="controls">
+          <button class="button" id="playBtn">▶ Play</button>
+          <label class="button outline" for="musicFile">Choose MP3</label>
+          <input id="musicFile" type="file" accept="audio/*">
+        </div>
+        <p id="musicStatus">Pilih Play untuk mendengarkan lagu ♡</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">A LITTLE LETTER / 03</p>
+      <h2>Dear Nasya,</h2>
+      <article class="letter">
+        <p>Happy birthday, Nasya! ♡</p>
+        <p>Semoga di umur yang baru ini, kamu selalu diberi kesehatan, kebahagiaan, dan kemudahan dalam mengejar semua impianmu.</p>
+        <p>Semoga selalu ada banyak alasan untuk tersenyum, Semoga satu per satu impianmu bisa terwujud. Kejar ptn yang kamu impikan nass. May your days always be surrounded by people who truly care about you....</p>
+        <p>Keep being you. You deserve all the good things life has to offer.</p>
+        <p class="signature">With love, ♡</p>
+      </article>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox">
+    <button id="closeLightbox" aria-label="Tutup foto">×</button>
+    <img id="bigPhoto" src="" alt="Foto kenangan">
+    <p id="photoCaption"></p>
+  </div>
+
+  <footer>Made especially for Nasya · 14.11.2026 ♡</footer>
+  <script src="script.js"></script>
+</body>
+</html>
